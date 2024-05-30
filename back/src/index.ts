@@ -120,6 +120,10 @@ app.get('/france_medals', async (req: Request, res: Response) => {
     res.send(medals.rows);
 });
 
+app.get('/testyanis', (req: Request, res: Response) => {
+    res.send('Hello yanis!');
+});
+
 app.get('/olympic_results', async (req: Request, res: Response) => {
     const client = await pool.connect();
     const results = await client.query('SELECT * FROM olympic_results');
