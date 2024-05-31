@@ -33,6 +33,7 @@ app.use(
     cors({
         origin: ["https://backend-hackathon-test2.vercel.app", "http://localhost:5173", "localhost:3000","https://frontend-hackathon-ashy.vercel.app"],
         allowedHeaders: ["Content-Type"],
+        methods: ["GET", "POST", "PUT", "DELETE"],
     }),
 );
 
